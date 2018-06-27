@@ -1,6 +1,7 @@
 import("//third_party/protobuf/proto_library.gni")
 import("//v8/gni/v8.gni")
 import("//v8/snapshot_toolchain.gni")
+import("//third_party/flatbuffers/flatbuffer.gni")
 import("deno.gni")
 import("rust.gni")
 
@@ -87,6 +88,12 @@ executable("snapshot_creator") {
     ":deno_nosnapshot",
   ]
   configs += [ ":deno_config" ]
+}
+
+flatbuffer("msg_fbs") {
+  sources = [
+    "msg.fbs",
+  ]
 }
 
 proto_library("msg_proto") {
