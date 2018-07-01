@@ -37,7 +37,7 @@ solutions = [{
     'third_party/cpplint'
 }, {
     'url':
-    'https://chromium.googlesource.com/external/github.com/google/flatbuffers@01c50d57a67a52ee3cddd81b54d4647e9123a290',
+    'https://github.com/rw/flatbuffers.git@a3c602f137702089dd1f237022118aacd4cd69df',
     'name':
     'third_party/flatbuffers/src'
 }, {

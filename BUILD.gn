@@ -92,7 +92,7 @@ executable("snapshot_creator") {
 
 flatbuffer("msg_fbs") {
   sources = [
-    "msg.fbs",
+    "src/msg.fbs",
   ]
 }
 
