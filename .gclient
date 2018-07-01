@@ -37,12 +37,12 @@ solutions = [{
     'third_party/cpplint'
 }, {
     'url':
+    'https://chromium.googlesource.com/external/github.com/google/flatbuffers@01c50d57a67a52ee3cddd81b54d4647e9123a290',
+    'name':
+    'third_party/flatbuffers/src'
+}, {
+    'url':
     'https://github.com/rust-lang/libc.git@8a85d662b90c14d458bc4ae9521a05564e20d7ae',
     'name':
     'third_party/rust_crates/libc'
-}, {
-    'url':
-    'https://github.com/ry/flatbuffers_chromium.git@4c409f3c4de59c9216c53bd652068b45487a907f',
-    'name':
-    'third_party/flatbuffers'
 }]

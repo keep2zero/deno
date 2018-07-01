@@ -6,4 +6,5 @@ node_modules
 /third_party/protobuf/
 /third_party/zlib/
 /third_party/rust_crates/libc/
+/third_party/flatbuffers/src/
 /.gclient_entries
