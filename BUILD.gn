@@ -96,6 +96,12 @@ flatbuffer("msg_fbs") {
   ]
 }
 
+flatbuffer_rust("msg_fbs_rust") {
+  sources = [
+    "src/msg.fbs",
+  ]
+}
+
 proto_library("msg_proto") {
   sources = [
     "src/msg.proto",
