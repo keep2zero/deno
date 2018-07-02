@@ -4,12 +4,6 @@
 
 # import("//testing/test.gni")
 import("//third_party/flatbuffers/flatbuffer.gni")
-import("//rust.gni")
-
-rust_library("flatbuffers_rust") {
-  rust_library_name = "flatbuffers"
-  source_root = "src/rust/flatbuffers/src/lib.rs"
-}
 
 config("flatbuffers_config") {
   include_dirs = [ "src/include" ]

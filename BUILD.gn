@@ -2,6 +2,7 @@ import("//third_party/protobuf/proto_library.gni")
 import("//v8/gni/v8.gni")
 import("//v8/snapshot_toolchain.gni")
 import("//third_party/flatbuffers/flatbuffer.gni")
+import("//third_party/flatbuffers/rust/rust_flatbuffer.gni")
 import("deno.gni")
 import("rust.gni")
 
@@ -96,7 +97,7 @@ flatbuffer("msg_fbs") {
   ]
 }
 
-flatbuffer_rust("msg_fbs_rust") {
+rust_flatbuffer("msg_rust") {
   sources = [
     "src/msg.fbs",
   ]

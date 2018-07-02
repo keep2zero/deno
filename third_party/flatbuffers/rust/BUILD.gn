@@ -1,0 +1,5 @@
+import("//rust.gni")
+
+rust_library("flatbuffers") {
+  source_root = "../src/rust/flatbuffers/src/lib.rs"
+}
