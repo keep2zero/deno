@@ -1,4 +1,8 @@
 extern crate libc;
+extern crate flatbuffers;
+extern crate msg_rust;
+use msg_rust::Deno::Vec3;
+
 use libc::c_char;
 use libc::c_int;
 use std::ffi::CStr;
@@ -57,4 +61,8 @@ fn main() {
     for arg in args {
         println!("arg: {}", arg);
     }
+
+    let mut builder = flatbuffers::FlatBufferBuilder::new();
+    let vec3 = Vec3::new(1.0, 2.0, 3.0);
+    println!("vec3.x {}", vec3.x_);
 }

@@ -13,7 +13,11 @@ config("deno_config") {
 
 rust_executable("deno") {
   source_root = "src/main.rs"
-  rust_deps = [ ":libc" ]
+  rust_deps = [
+    ":libc",
+    ":msg_rust",
+    "//third_party/flatbuffers/rust:flatbuffers",
+  ]
   deps = [
     ":libdeno",
   ]
